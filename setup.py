@@ -12,7 +12,7 @@ with open("info.txt", "w") as f:
     newver = ver.split(".")
     last = newver[2]
     newver[2] = str(int(last)+1)
-    info['version'] = newver
+    info['version'] = '.'.join(newver)
     f.write(json.dumps(info))
 
 setuptools.setup(

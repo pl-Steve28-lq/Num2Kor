@@ -10,9 +10,10 @@ def cleanPycache():
        shutil.rmtree(i)
 
 def removeBuilds():
-    removes = ['build', 'dist', 'Access_Modify.egg-info']
+    removes = ['build', 'dist', 'Num2Kor.egg-info']
     for i in removes:
-        shutil.rmtree(f'./{i}')
+        if os.path.exists(f"./{i}"):
+            shutil.rmtree(f'./{i}')
 
 cleanPycache()
 removeBuilds()
