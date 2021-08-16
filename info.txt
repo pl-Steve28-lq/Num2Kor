@@ -1,1 +1,1 @@
-{"version": "1.0.3", "desc": "Convert Number into Korean Words!"}
+{"version": "1.0.4", "desc": "Convert Number into Korean Words!"}
